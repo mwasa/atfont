@@ -62,7 +62,7 @@ namespace at_font
 
             byte[] aa2 = fileBytes;
 
-            offset = Convert.ToInt32(boxoffset.Text);
+            offset = Convert.ToInt32(boxoffset1.Text);
 
             for (int i = 0; i < ((aa.Length - offset) / 12); i++)
             {
@@ -134,7 +134,7 @@ namespace at_font
 
             string pathSource = textBox2.Text;
             string pathNew = textBox3.Text;
-            int offset = 81;
+            int offset = Convert.ToInt32(boxoffset2.Text);
 
             try
             {
@@ -164,8 +164,8 @@ namespace at_font
 
 
                         byte[] bytes12 = { bytes[0], bytes[1], bytes[2], bytes[3],
-                        bytes[8], bytes[9], bytes[10], bytes[11],
-                        bytes[4], bytes[5], bytes[6], bytes[7] };
+                            bytes[8], bytes[9], bytes[10], bytes[11],
+                            bytes[4], bytes[5], bytes[6], bytes[7] };
 
                         outputbytes = Combine(outputbytes, bytes12);
                     }
@@ -211,12 +211,6 @@ namespace at_font
             else if (dr == DialogResult.Cancel)
             {
             }
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
 
         }
     }
