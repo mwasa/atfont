@@ -37,9 +37,11 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.boxoffset2 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.boxoffset2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,6 +131,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // boxoffset2
+            // 
+            this.boxoffset2.Location = new System.Drawing.Point(84, 76);
+            this.boxoffset2.Name = "boxoffset2";
+            this.boxoffset2.Size = new System.Drawing.Size(100, 21);
+            this.boxoffset2.TabIndex = 15;
+            this.boxoffset2.Text = "0";
+            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(84, 19);
@@ -145,26 +155,38 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "원본경로:";
             // 
-            // boxoffset2
+            // label5
             // 
-            this.boxoffset2.Location = new System.Drawing.Point(84, 76);
-            this.boxoffset2.Name = "boxoffset2";
-            this.boxoffset2.Size = new System.Drawing.Size(100, 21);
-            this.boxoffset2.TabIndex = 15;
-            this.boxoffset2.Text = "0";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(326, 578);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 12);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "00 --> 144";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(326, 594);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 12);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "01, 04, 05, 11 --> 176";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(477, 732);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.fileopen);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.boxoffset1);
             this.Controls.Add(this.listView1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "NieR Font Tool";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -187,6 +209,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox boxoffset2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 
